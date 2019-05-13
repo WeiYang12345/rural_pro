@@ -1,6 +1,7 @@
 import React from 'react';
 import './Menu.scss';
 import { Menu, Icon } from 'antd';
+import { NavLike } from 'react-router-dom';
 
 const SubMenu = Menu.SubMenu;
 
@@ -10,7 +11,7 @@ export default class MenuList extends React.Component  {
     this.state = {
       collapsed: false,
       menuList: [
-        { title: '用户管理', children: [{ content: '用户管理', },{ content: '商户管理', },{ content: '新建商户', }]},
+        { title: '用户管理', children: [{ content: '用户管理',url:'/home' },{ content: '商户管理', url:'/home/pos'},{ content: '新建商户', }]},
         { title: '广告管理', children: [{ content: '广告主管理', },{ content: '新建广告主管理', },{ content: '广告位管理', },{ content: '广告收费模板', },{ content: '广告订单管理', }]}
       ]
     };
