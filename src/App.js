@@ -3,16 +3,16 @@ import { HashRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 
 import Home from './view/home/Home';
-import Login from './view/home/Login';
+import Login from './view/login/Login';
 
-class App extends React.Componet  {
-  sander() {
+class App extends React.Component  {
+  render() {
     return (
       <div className="app">
         <Router>
           <div>
-            <Route path="/" componet={Home}></Route>
-            <Route path="/home" componet={Home}></Route>
+            <Route exact path="/" component={Login}/>
+            <Route path="/home" component={Home}/>
           </div>
         </Router>
       </div>
