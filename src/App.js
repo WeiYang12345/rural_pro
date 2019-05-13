@@ -1,26 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
+import { HashRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Home from './view/home/Home';
+import Login from './view/home/Login';
+
+class App extends React.Componet  {
+  sander() {
+    return (
+      <div className="app">
+        <Router>
+          <div>
+            <Route path="/" componet={Home}></Route>
+            <Route path="/home" componet={Home}></Route>
+          </div>
+        </Router>
+      </div>
+    )
+  }
 }
 
 export default App;
