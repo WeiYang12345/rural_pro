@@ -27,6 +27,8 @@
 .mg_t40 { margin-top: 40px;}
 .mg_t50 { margin-top: 50px;}
 
+.mg_b5 { margin-bottom: 5px;}
+.mg_b10 { margin-bottom: 10px;}
 .mg_b20 { margin-bottom: 20px;}
 .mg_b30 { margin-bottom: 30px;}
 .mg_b50 { margin-bottom: 50px;}
@@ -113,4 +115,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+.in_b {
+    display: inline-block;
 }
